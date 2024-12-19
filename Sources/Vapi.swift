@@ -257,7 +257,7 @@ public final class Vapi: CallClientDelegate {
         }
     }
 
-    private func joinCall(url: URL, recordVideo: Bool) {
+    public func joinCall(url: URL, recordVideo: Bool) {
         Task { @MainActor in
             do {
                 let call = CallClient()
